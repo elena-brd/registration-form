@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#fff, #fffcc8);
+    color: #292929;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 950px;
+    height: 100vh;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    color: #9d8189;
+}
+
+.container-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.40);
+}
+
+
+.img-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.registration-content {
+    background: #fff;
+    padding: 2rem;
+}
+
+.registration-content form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 0;
+}
+
+.registration-content input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #f4acb7;
+    border-radius: 3px;
+}
+
+
+.registration-content form p {
+    margin: 0;
+}
+
+.registration-content input[type="file"] {
+    color: transparent;
+    border: 0;
+}
+
+.change-form {
+    display: grid;
+    grid-column: 1/3;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    background: #d8e2dc;
+    color: #292929;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #9d8189;
+    color: #fff;
+}
+
+@media(max-width: 760px) {
+    .container-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
